@@ -1,6 +1,7 @@
 // import Head from 'next/head'
 
-import { Button, Flex, Image, Text } from '@chakra-ui/core';
+import { Button, Flex, Text } from '@chakra-ui/core';
+import { Image } from "@chakra-ui/react";
 import { FormEvent, useState } from 'react';
 import Input from '../components/Input';
 import axios from 'axios';
@@ -34,10 +35,10 @@ export default function Home() {
         width="100%"
         maxW="400px"
       >
-        <Image marginBottom={8} src="/rocketseat.svg" alt="Rocketseat" />
+        <Image objectFit="cover" marginBottom={8} src="/coffee.svg" alt="Hot Coffee" />
 
         <Text textAlign="center" fontSize="sm" color="gray.400" marginBottom={2}>
-          Assine a newsletter da Rocketseat e receba os melhores conteúdos sobre programação!
+          Assine a newsletter da Coffe Co. e receba os melhores conteúdos sobre café!
         </Text>
 
         <Input
@@ -49,11 +50,11 @@ export default function Home() {
 
         <Button
           type="submit"
-          backgroundColor="purple.500"
+          backgroundColor="gray.500"
           height="50px"
           borderRadius="sm"
           marginTop={6}
-          _hover={{ backgroundColor: 'purple.600' }}
+          _hover={{ backgroundColor: 'gray.400' }}
         >
           INSCREVER
         </Button>
